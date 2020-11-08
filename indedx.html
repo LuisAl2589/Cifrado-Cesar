@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    CIFRADO CESAR
+                </div>
+                <div class="col-md-2" id="name">
+                    By García Castañeda Luis Alfonso
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+    
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                
+                <div class="card" style="background-color:rgb(3, 12, 53); border-color:rgb(102, 102, 110);">
+                  <img class="card-img-top" src="holder.js/100x180/" alt="">
+                  <div class="card-body">
+                    <h5 id="texto" class="card-title">Ingresa el núero de Desplazamiento  <input id="desp" type="number" min="1"></h5>
+                    <p class="card-title"><button type="button" onclick="codificar()" class="btn btn-dark" btn-lg btn-block">Cifrar</button>  <button type="button"  onclick="decodificar()" class="btn btn-light" btn-lg btn-block">Descifrar</button></p>
+                 
+                    <div class="form-group">
+                        <label for=""></label>
+                        <textarea id="cadena" class="form-control" name="" id="" rows="3"></textarea>
+                      </div>
+                </div>
+                </div>
+                
+                
+                
+                      
+                    <br><br>
+
+                    
+
+                
+            </div>
+
+             <div class="col-md-6">
+
+                <div class="card" style="background-color:rgb(3, 12, 53); border-color:rgb(102, 102, 110);">
+                    <img class="card-img-top" src="holder.js/100x180/" alt="">
+                    <div class="card-body">
+                        <p class="card-title" id="resultado"></p>
+                        
+                  </div>
+                  </div>
+
+                
+             </div>   
+            
+        </div>
+
+
+    </div>
+
+    
+
+
+    <script src="js/logica.js"></script>
+</body>
+</html>
